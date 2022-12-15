@@ -1,0 +1,270 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&family=Shrikhand&display=swap');
+
+body {
+    margin: auto;
+}
+
+header {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.size{
+    width: 80%;
+}
+
+.section__background{
+    background-color: #f7f7f7;
+}
+
+.ohmyfood_logo {
+    display: flex;
+    height: 30px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.map_icone{
+    margin-left: 140px;
+}
+
+.map_bar {
+    position: relative;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.map_bar i{
+    position:absolute;
+
+ }
+
+.research_input {
+    width: 100%;
+    height: 40px;
+    text-align: center;
+    background-color: #eaeaea;
+    border: none;
+    box-shadow: rgb(204, 219, 232) 3px 3px 6px 0px inset, rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
+}
+.research_input::placeholder{
+    color: black;
+    font-weight: bold;
+}
+
+
+.big_title {
+    text-align: center;
+}
+
+.sub_title{
+    text-align: center;
+    color: gray;
+}
+
+.explor_button{
+    border: 2px solid #FF79DA;
+    border-radius: 25px;
+    height: 50px;
+    font-weight: 700;
+    font-size: 17px;
+    margin-left: 15px;
+    background-color: #FF79DA;
+    padding-left: 20px;
+    padding-right: 20px;
+    color: white;
+    font-weight: 400;
+    margin-bottom: 50px;
+    width: 60%;
+}
+
+.fonction_button {
+    width: 100%;
+    border: 2px solid #f7f7f7;
+    border-radius: 25px;
+    height: 50px;
+    font-style: normal;
+    font-size: 17px;
+    background-color: #ffffff;
+    padding-left: 20px;
+    padding-right: 20px;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    background: #f7f7f7;
+}
+.fonction_button:hover{
+    background-color: #ffdafc;
+}
+.icon__button--color{
+    color: gray;
+}
+.icon__button--color:hover{
+    color: #9356DC;
+}
+
+.margin_fonction__icone{
+    margin-right: 10px;
+}
+
+
+.all_fonction_button{
+    line-height: 4;
+}
+
+.restaurant_title{
+    margin-top: 20px;
+}
+.food_card {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    border-radius: 20px;
+    background-color: white;
+    margin-bottom: 30px;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    text-decoration: none;
+    color: black;
+}
+p.new {
+    position: absolute;
+    background: #99e2D0;
+    color: #008766;
+    display: flex;
+    padding: 10px;
+    border-radius: 2px;
+    margin-right: 20px;
+}
+
+.food_images {
+    height: 200px;
+    border-radius: 20px 20px 0px 0px;
+    object-fit: cover;
+    width: 100%;
+}
+.card_order{
+    display: flex;
+    justify-content: end;
+}
+.text_heart {
+    display: flex;
+    justify-content: space-between;
+}
+
+.food_heart {
+    display: flex;
+    align-items: center;
+    margin-right: 30px;
+    font-size: 20px;
+}
+
+.food_text {
+    margin-left: 20px;
+}
+
+footer {
+    background: #353535;
+    display: flex;
+    flex-direction: column;
+    line-height: 30px;
+    position: relative;
+    z-index: 2;
+    /* top: 50%; */
+    padding: 20px;
+}
+
+.footer_title {
+    color: white;
+}
+
+.text_footer {
+    color: white;
+    text-decoration: none;
+}
+.text_footer_icon
+{
+    color: white;
+    text-decoration: none;
+    margin-left: 5px;
+}
+
+.police-shrikhand{
+    font-family: 'Shrikhand', cursive;
+}
+
+.police-roboto{
+    font-family: 'Roboto', sans-serif;
+}
+
+.text-bold{
+    font-weight: bold;
+}
+
+.test{
+    border: #9356DC, solid, 1px;
+    color: #9356DC;
+}
+
+.margin--element{
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.arrow_click{
+    text-decoration: none;
+    color: black;
+}
+.arrow__size
+{
+    font-size: 20px;
+}
+
+.home_food {
+    width: 100%;
+    object-fit: cover;
+}
+
+.title--order {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.heart_home {
+    font-size: 30px;
+    margin-right: 30px;
+}
+.price{
+    display: flex;
+    align-items: end;
+    margin-right: 30px;
+}
+
+.title_food_home { 
+    border-bottom: 3px solid;
+    border-color: #99e2d0;
+    padding-bottom: 5px;
+    width: 10%;
+}
+
+.check {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 200px;
+}
+
+.parents {
+    position: relative;
+}
+.child1 {
+    position: absolute;
+}
+.child2 {
+    z-index: 1;
+    padding: 20px;
+    position: relative;
+    top: 220px;
+    background: white;
+    border-radius: 50px 50px 0px 0px;
+}
+
+.icon_margin{
+    color: #ffffff;
+}
