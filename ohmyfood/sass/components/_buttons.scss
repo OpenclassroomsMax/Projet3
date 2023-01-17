@@ -1,0 +1,155 @@
+
+ @import "../utils/mixins"; 
+
+
+ .explor {
+    display: flex;
+    justify-content: center;
+
+    button{
+    border: none;
+    border-radius: 25px;
+    height: 50px;
+    font-weight: 700;
+    font-size: 17px;
+    margin-left: 15px;
+    background-color: #ff79da;
+    padding-left: 20px;
+    padding-right: 20px;
+    color: white;
+    font-weight: 400;
+    margin-bottom: 50px;
+    width: 300px;
+    @include base-shadow;
+    @include linearGradient;
+  }
+
+}
+
+.check
+{
+  display: flex;
+  justify-content: center;
+  margin-bottom: 200px;
+
+  button{
+    border: none;
+    border-radius: 25px;
+    height: 50px;
+    font-weight: 700;
+    font-size: 17px;
+    margin-left: 15px;
+    background-color: #ff79da;
+    padding-left: 20px;
+    padding-right: 20px;
+    color: white;
+    font-weight: 400;
+    margin-bottom: 50px;
+    width: 300px;
+    @include base-shadow;
+    background-image: linear-gradient(
+      to top,
+      rgba(147, 86, 220),
+      rgba(255, 121, 218)
+    );
+  }
+
+}
+
+.margin{
+  margin-left: 20px;
+}
+
+.all_fonction_button {
+
+    line-height: 4;
+    display: flex;
+    /* flex-direction: column; */
+    /* align-items: center; */
+    justify-content: space-around;
+    
+    
+
+    .index {
+        display: flex;
+        align-items: center;
+        width: 30%;
+        margin-bottom: 20px;
+        
+
+        .fonction_button {
+            width: 100%;
+            border: 2px solid #f7f7f7;
+            border-radius: 25px;
+            height: 50px;
+            font-style: normal;
+            font-size: 17px;
+            background-color: #ffffff;
+            padding-left: 20px;
+            padding-right: 20px;
+            box-shadow: rgb(149 157 165 / 20%) 0px 8px 24px;
+            background: #f7f7f7;
+            z-index: -1;
+            /* margin-bottom: 30px; */
+            i {
+                margin-right: 10px;
+                color:gray;
+            }
+            &:hover
+            {
+              background-color: red;
+
+              i{
+                color: green;
+              }
+            }
+
+
+          }
+          
+
+          .ptest {
+            color: white;
+            /* border: solid; */
+            /* margin: 10px; */
+            width: 20px;
+            background: #9356dc;
+            height: 20px;
+            text-align: center;
+            border-radius: 100px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-right: -10px;
+            font-weight: 700;
+            font-size: 14px;
+          }
+    }
+    @media screen and (max-width: 768px) {
+      .index {
+        width: 90%;
+      }
+    }
+ 
+}
+@media screen and (max-width: 768px) {
+    
+  .all_fonction_button {
+    flex-direction: column;
+    align-items: center; 
+  }
+  
+}
+
+
+
+
+.fonction_button:hover {
+    background-color: #ffdafc;
+  }
+  .icon__button--color {
+    color: gray;
+  }
+  .icon__button--color:hover {
+    color: #9356dc;
+  }

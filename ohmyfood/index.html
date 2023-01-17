@@ -4,22 +4,24 @@
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="CSS/style.css" />
+    <link rel="stylesheet" href="sass/main.css" />
     <script
       src="https://kit.fontawesome.com/545163d5d6.js"
       crossorigin="anonymous"
     ></script>
     <title>ohmyfood</title>
+
   </head>
 
   <body>
     <main>
       <header class="section__background">
-        <img
-          class="ohmyfood_logo"
-          src="images/ohmyfood.png"
-          alt="Logo ohmyfood"
-        />
+        <div class="testimage">
+          <div class="largeur"><img
+            src="images/ohmyfood.png"
+            alt="Logo ohmyfood"
+            ></div>
+        </div>
 
         <div class="map_bar">
           <i class="fa-solid fa-location-dot map_icone"></i>
@@ -30,46 +32,57 @@
           />
         </div>
         <h1 class="big_title police-roboto margin--element">
-          Réservez le menu qui vous convient
+          Réservez le menu qui <br> vous convient
         </h1>
         <p class="sub_title police-roboto margin--element">
           Découvrez des restaurants d'exception, sélectionnés pas nos soin.
         </p>
-        <button class="explor_button police-roboto">
-          Explorer nos restaurants
-        </button>
+        <div class="explor">
+          <button class=" police-roboto">
+            Explorer nos restaurants
+          </button>
+        </div>
       </header>
 
       <section>
-        <h2 class="police-roboto margin--element">Fonctionnement</h2>
+        <h2 class="police-roboto margin">Fonctionnement</h2>
         <div class="all_fonction_button">
-          <p class="test">1</p>
-          <button class="fonction_button police-roboto">
-            <i
-              class="fa-solid fa-mobile-screen-button icon__button--color margin_fonction__icone"
-            ></i
-            >Choisissez un restaurant
-          </button>
-          <button class="fonction_button police-roboto">
-            <i
-              class="fa-solid fa-list-ul icon__button--color margin_fonction__icone"
-            ></i
-            >Composez votre menu
-          </button>
-          <button class="fonction_button police-roboto">
-            <i
-              class="fa-solid fa-store icon__button--color margin_fonction__icone"
-            ></i
-            >Dégustez au restaurant
-          </button>
+          <div class="index">
+            <p class="ptest">1</p>
+            <button class="fonction_button police-roboto">
+              <i
+                class="fa-solid fa-mobile-screen-button icon__button--color margin_fonction__icone"
+              ></i
+              >Choisissez un restaurant
+            </button>
+          </div>
+          <div class="index">
+            <p class="ptest">2</p>
+            <button class="fonction_button police-roboto">
+              <i
+                class="fa-solid fa-list-ul icon__button--color margin_fonction__icone"
+              ></i
+              >Composez votre menu
+            </button>
+          </div>
+          <div class="index">
+            <p class="ptest">3</p>
+            <button class="fonction_button police-roboto">
+              <i
+                class="fa-solid fa-store icon__button--color margin_fonction__icone"
+              ></i
+              >Dégustez au restaurant
+            </button>
+          </div>
         </div>
       </section>
 
-      <section class="section__background">
+      <section class="menu">
         <h2 class="police-roboto margin--element restaurant_title">
           Restaurants
         </h2>
-        <div class="margin--element">
+
+        <div class="plat">
           <a href="/Page/la_palette_du_gout.html" class="food_card">
             <div class="card_order">
               <p class="new police-roboto">Nouveau</p>
@@ -86,6 +99,7 @@
               </div>
               <div class="food_heart">
                 <i class="fa-regular fa-heart"></i>
+                <i class="fa-solid fa-heart rempli"></i>
               </div>
             </div>
           </a>
@@ -107,17 +121,19 @@
               </div>
               <div class="food_heart">
                 <i class="fa-regular fa-heart"></i>
+                <i class="fa-solid fa-heart rempli"></i>
               </div>
             </div>
           </a>
 
           <a href="/Page/a_la_francaise.html" class="food_card">
+            
             <img
               class="food_images"
               src="images/toa-heftiba-DQKerTsQwi0-unsplash.jpg"
               alt="A la française"
             />
-
+           
             <div class="text_heart">
               <div class="food_text">
                 <p class="police-roboto text-bold">À la française</p>
@@ -125,13 +141,15 @@
               </div>
               <div class="food_heart">
                 <i class="fa-regular fa-heart"></i>
+                <i class="fa-solid fa-heart rempli"></i>
               </div>
             </div>
           </a>
 
           <a href="/Page/le_delice_des_sens.html" class="food_card">
+            
             <img
-              class="food_images"
+              class="logo"
               src="images/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg"
               alt="Le délice des sens"
             />
@@ -143,6 +161,7 @@
               </div>
               <div class="food_heart">
                 <i class="fa-regular fa-heart"></i>
+                <i class="fa-solid fa-heart rempli"></i>
               </div>
             </div>
           </a>
@@ -152,12 +171,16 @@
       <footer>
         <h2 class="footer_title police-shrikhand">ohmyfood</h2>
         <div class="icon_margin">
-          <i class="fa-solid fa-utensils "></i>
-          <a href="#" class="text_footer_icon police-roboto ">Proposer un restaurant</a>
+          <i class="fa-solid fa-utensils"></i>
+          <a href="#" class="text_footer_icon police-roboto"
+            >Proposer un restaurant</a
+          >
         </div>
         <div class="icon_margin">
-          <i class="fa-solid fa-handshake-angle "></i>
-          <a href="#" class="text_footer_icon police-roboto">Devenir partenaire</a>
+          <i class="fa-solid fa-handshake-angle"></i>
+          <a href="#" class="text_footer_icon police-roboto"
+            >Devenir partenaire</a
+          >
         </div>
         <a href="#" class="text_footer police-roboto">Mention légales</a>
         <a href="mailto:" class="text_footer police-roboto">Contact</a>

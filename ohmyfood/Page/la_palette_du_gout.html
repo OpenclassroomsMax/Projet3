@@ -4,7 +4,7 @@
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="/CSS/style.css" />
+    <link rel="stylesheet" href="/sass/main.css" />
     <script
       src="https://kit.fontawesome.com/545163d5d6.js"
       crossorigin="anonymous"
@@ -14,17 +14,17 @@
 
   <body>
     <main>
-      <header class="size">
+      <header class="section__background">
+        <div class="testimage">
           <a class="arrow_click" href="/index.html"
-            ><i class="fa-solid fa-arrow-left arrow__size"></i
+          ><i class="fa-solid fa-arrow-left arrow__size"></i
           ></a>
-        <img
-          class="ohmyfood_logo"
-          src="/images/ohmyfood.png"
-          alt="Logo ohmyfood"
-        />
+          <div class="largeur"><img src="/images/ohmyfood.png" alt="Logo ohmyfood" /></div>
+          
+        </div>
       </header>
-      <section class="all_food section__background">
+
+      <section class="azer">
         <div class="parents">
           <div class="child1">
             <img
@@ -36,133 +36,177 @@
           <div class="child2">
             <div class="title--order">
               <h1 class="police-shrikhand">La palette du goût</h1>
-              <i class="fa-regular fa-heart heart_home"></i>
+              <div class="ok">
+                <i class="fa-regular fa-heart heart_home"></i>
+                <i class="fa-solid fa-heart rempli"></i>
+              </div>
             </div>
-            <p class="title_food_home police-roboto">ENTREES</p>
+            <div class="repas">
+              <div class="list">
+                <p class="title_food_home police-roboto">ENTREES</p>
 
-            <a href="#" class="food_card">
-              <div class="text_heart">
-                <div class="food_text">
-                  <p class="police-roboto text-bold">
-                    Fricassée d'escargot
-                  </p>
-                  <p class="police-roboto">Au piment d'Espelette </p>
-                </div>
-                <div class="price police-roboto text-bold">
-                  <p>25€</p>
-                </div>
-              </div>
-            </a>
+                <a href="#" class="menu_items">
+                  <div class="text_heart">
+                    <div class="food_text">
+                      <p class="text-bold">
+                        Fricassée d'escargot
+                      </p>
+                      <p class="police-roboto">Au piment d'Espelette</p>
+                    </div>
+                    <div class="price text-bold">
+                      <p>25€</p>
+                    </div>
+                    <div class="menu_icone">
+                      <i class="fa-solid fa-check"></i>
+                    </div>
+                  </div>
+                </a>
 
-            <a href="#" class="food_card">
-              <div class="text_heart">
-                <div class="food_text">
-                  <p class="police-roboto text-bold">
-                    Foie gras de canard mi-cuit
-                  </p>
-                  <p class="police-roboto">Et ses copeaux de truffe noire</p>
-                </div>
-                <div class="price police-roboto text-bold">
-                  <p>35€</p>
-                </div>
-              </div>
-            </a>
+                <a href="#" class="menu_items">
+                  <div class="text_heart">
+                    <div class="food_text">
+                      <p class="police-roboto text-bold">
+                        Foie gras de canard mi-cuit
+                      </p>
+                      <p class="police-roboto">
+                        Et ses copeaux de truffe noire
+                      </p>
+                    </div>
+                    <div class="price police-roboto text-bold">
+                      <p>35€</p>
+                    </div>
+                    <div class="menu_icone">
+                      <i class="fa-solid fa-check"></i>
+                    </div>
+                  </div>
+                </a>
 
-            <a href="#" class="food_card">
-              <div class="text_heart">
-                <div class="food_text">
-                  <p class="police-roboto text-bold">Œuf au plat</p>
-                  <p class="police-roboto">Assaisonné à la truffe sur lit de caviar</p>
-                </div>
-                <div class="price police-roboto text-bold">
-                  <p>20€</p>
-                </div>
+                <a href="#" class="menu_items">
+                  <div class="text_heart">
+                    <div class="food_text">
+                      <p class="police-roboto text-bold">Œuf au plat</p>
+                      <p class="police-roboto">
+                        Assaisonné à la truffe sur lit de caviar
+                      </p>
+                    </div>
+                    <div class="price police-roboto text-bold">
+                      <p>20€</p>
+                    </div>
+                    <div class="menu_icone">
+                      <i class="fa-solid fa-check"></i>
+                    </div>
+                  </div>
+                </a>
               </div>
-            </a>
+              <div class="list">
+                <p class="title_food_home police-roboto">PLATS</p>
+                <a href="#" class="menu_items">
+                  <div class="text_heart">
+                    <div class="food_text">
+                      <p class="police-roboto text-bold">
+                        Filet de boeuf aux herbes
+                      </p>
+                      <p class="police-roboto">
+                        Accompagné de sa ribambelle de légumes
+                      </p>
+                    </div>
+                    <div class="price police-roboto text-bold">
+                      <p>40€</p>
+                    </div>
+                    <div class="menu_icone">
+                      <i class="fa-solid fa-check"></i>
+                    </div>
+                  </div>
+                </a>
 
-            <p class="title_food_home police-roboto">PLATS</p>
-            <a href="#" class="food_card">
-              <div class="text_heart">
-                <div class="food_text">
-                  <p class="police-roboto text-bold">Filet de boeuf aux herbes</p>
-                  <p class="police-roboto">
-                    Accompagné de sa ribambelle de légumes
-                  </p>
-                </div>
-                <div class="price police-roboto text-bold">
-                  <p>40€</p>
-                </div>
-              </div>
-            </a>
+                <a href="#" class="menu_items">
+                  <div class="text_heart">
+                    <div class="food_text">
+                      <p class="police-roboto text-bold">
+                        Parmentier de queue de boeuf
+                      </p>
+                      <p class="police-roboto">
+                        À la truffe noire sur sa purée de panais
+                      </p>
+                    </div>
+                    <div class="price police-roboto text-bold">
+                      <p>35€</p>
+                    </div>
+                    <div class="menu_icone">
+                      <i class="fa-solid fa-check"></i>
+                    </div>
+                  </div>
+                </a>
 
-            <a href="#" class="food_card">
-              <div class="text_heart">
-                <div class="food_text">
-                  <p class="police-roboto text-bold">Parmentier de queue de boeuf</p>
-                  <p class="police-roboto">À la truffe noire sur sa purée de panais</p>
-                </div>
-                <div class="price police-roboto text-bold">
-                  <p>35€</p>
-                </div>
+                <a href="#" class="menu_items">
+                  <div class="text_heart">
+                    <div class="food_text">
+                      <p class="police-roboto text-bold">Filet de turbot</p>
+                      <p class="police-roboto">Aux agrumes</p>
+                    </div>
+                    <div class="price police-roboto text-bold">
+                      <p>44€</p>
+                    </div>
+                    <div class="menu_icone">
+                      <i class="fa-solid fa-check"></i>
+                    </div>
+                  </div>
+                </a>
               </div>
-            </a>
+              <div class="list">
+                <p class="title_food_home police-roboto">DESSERTS</p>
+                <a href="#" class="menu_items">
+                  <div class="text_heart">
+                    <div class="food_text">
+                      <p class="police-roboto text-bold">Paris-Brest</p>
+                      <p class="police-roboto">Revisité</p>
+                    </div>
+                    <div class="price police-roboto text-bold">
+                      <p>18€</p>
+                    </div>
+                    <div class="menu_icone">
+                      <i class="fa-solid fa-check"></i>
+                    </div>
+                  </div>
+                </a>
 
-            <a href="#" class="food_card">
-              <div class="text_heart">
-                <div class="food_text">
-                  <p class="police-roboto text-bold">
-                    Filet de turbot
-                  </p>
-                  <p class="police-roboto">
-                    Aux agrumes
-                  </p>
-                </div>
-                <div class="price police-roboto text-bold">
-                  <p>44€</p>
-                </div>
-              </div>
-            </a>
+                <a href="#" class="menu_items">
+                  <div class="text_heart">
+                    <div class="food_text">
+                      <p class="police-roboto text-bold">
+                        Macaron au chocolat d'exception
+                      </p>
+                      <p class="police-roboto">
+                        Et glace à la vanille de Madagascar
+                      </p>
+                      
+                    </div>
+                    <p class="price police-roboto">22€</p>
 
-            <p class="title_food_home police-roboto">DESSERTS</p>
-            <a href="#" class="food_card">
-              <div class="text_heart">
-                <div class="food_text">
-                  <p class="police-roboto text-bold">
-                    Paris-Brest
-                  </p>
-                  <p class="police-roboto">Revisité</p>
-                </div>
-                <div class="price police-roboto text-bold">
-                  <p>18€</p>
-                </div>
-              </div>
-            </a>
+                    <div class="menu_icone">
+                      <i class="fa-solid fa-check"></i>
+                    </div>
+                  </div>
+                </a>
 
-            <a href="#" class="food_card">
-              <div class="text_heart">
-                <div class="food_text">
-                  <p class="police-roboto text-bold">Macaron au chocolat d'exception </p>
-                  <p class="police-roboto">Et glace à la vanille de Madagascar</p>
-                </div>
-                <div class="price police-roboto text-bold">
-                  <p>22€</p>
-                </div>
+                <a href="#" class="menu_items">
+                  <div class="text_heart">
+                    <div class="food_text">
+                      <p class="police-roboto text-bold">Mousse au chocolat</p>
+                      <p class="police-roboto">
+                        Au piment d'Espelette et à la truffe noire
+                      </p>
+                    </div>
+                    <div class="price police-roboto text-bold">
+                      <p>23€</p>
+                    </div>
+                    <div class="menu_icone">
+                      <i class="fa-solid fa-check"></i>
+                    </div>
+                  </div>
+                </a>
               </div>
-            </a>
-
-            <a href="#" class="food_card">
-              <div class="text_heart">
-                <div class="food_text">
-                  <p class="police-roboto text-bold">
-                    Mousse au chocolat 
-                  </p>
-                  <p class="police-roboto">Au piment d'Espelette et à la truffe noire</p>
-                </div>
-                <div class="price police-roboto text-bold">
-                  <p>23€</p>
-                </div>
-              </div>
-            </a>
+            </div>
             <div class="check">
               <button class="explor_button police-roboto">Commander</button>
             </div>
@@ -172,12 +216,16 @@
       <footer>
         <h2 class="footer_title police-shrikhand">ohmyfood</h2>
         <div class="icon_margin">
-          <i class="fa-solid fa-utensils "></i>
-          <a href="#" class="text_footer_icon police-roboto ">Proposer un restaurant</a>
+          <i class="fa-solid fa-utensils"></i>
+          <a href="#" class="text_footer_icon police-roboto"
+            >Proposer un restaurant</a
+          >
         </div>
         <div class="icon_margin">
-          <i class="fa-solid fa-handshake-angle "></i>
-          <a href="#" class="text_footer_icon police-roboto">Devenir partenaire</a>
+          <i class="fa-solid fa-handshake-angle"></i>
+          <a href="#" class="text_footer_icon police-roboto"
+            >Devenir partenaire</a
+          >
         </div>
         <a href="#" class="text_footer police-roboto">Mention légales</a>
         <a href="mailto:" class="text_footer police-roboto">Contact</a>

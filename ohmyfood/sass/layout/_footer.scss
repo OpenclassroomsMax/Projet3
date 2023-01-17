@@ -1,0 +1,43 @@
+@import "../utils/variables";
+@import"../utils/mixins";
+
+footer {
+    background: $couleurfooter;
+    display: flex;
+    flex-direction: column;
+    line-height: 30px;
+    position: relative;
+    z-index: 2;
+    /* top: 50%; */
+    padding: 20px;
+    h2{
+        @include Shrikhand;
+    }
+    p{
+        @include Roboto;
+        font-size: 20px;
+    }
+
+    i{
+    color: white;
+    }
+}
+
+.footer_title {
+    color: white;
+}
+
+.text_footer {
+    color: white;
+    text-decoration: none;
+}
+
+.text_footer_icon
+{
+    color: white;
+    text-decoration: none;
+    margin-left: 5px;
+}
+
+
+
