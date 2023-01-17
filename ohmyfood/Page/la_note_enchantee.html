@@ -4,7 +4,7 @@
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="/CSS/style.css" />
+    <link rel="stylesheet" href="/sass/main.css" />
     <script
       src="https://kit.fontawesome.com/545163d5d6.js"
       crossorigin="anonymous"
@@ -14,19 +14,19 @@
 
   <body>
     <main>
-      <header class="size">
+      <header class="section__background">
         <div class="testimage">
           <a class="arrow_click" href="/index.html"
           ><i class="fa-solid fa-arrow-left arrow__size"></i
           ></a>
-          <img
+          <div class="largeur"><img
             class="ohmyfood_logo"
             src="/images/ohmyfood.png"
             alt="Logo ohmyfood"
-          />
+          /></div>
         </div>
       </header>
-      <section class="all_food section__background">
+      <section class="azer">
         <div class="parents">
           <div class="child1">
             <img
@@ -38,11 +38,17 @@
           <div class="child2">
             <div class="title--order">
               <h1 class="police-shrikhand">La note enchantée</h1>
-              <i class="fa-regular fa-heart heart_home"></i>
+              <div class="ok">
+                <i class="fa-regular fa-heart heart_home"></i>
+                <i class="fa-solid fa-heart rempli"></i>
+              </div>
             </div>
+
+            <div class="repas">
+            <div class="list">
             <p class="title_food_home police-roboto">ENTREES</p>
 
-            <a href="#" class="food_card">
+            <a href="#" class="menu_items">
               <div class="text_heart">
                 <div class="food_text">
                   <p class="police-roboto text-bold">
@@ -53,10 +59,13 @@
                 <div class="price police-roboto text-bold">
                   <p>25€</p>
                 </div>
+                <div class="menu_icone">
+                  <i class="fa-solid fa-check"></i>
+                </div>
               </div>
             </a>
 
-            <a href="#" class="food_card">
+            <a href="#" class="menu_items">
               <div class="text_heart">
                 <div class="food_text">
                   <p class="police-roboto text-bold">
@@ -67,10 +76,13 @@
                 <div class="price police-roboto text-bold">
                   <p>35€</p>
                 </div>
+                <div class="menu_icone">
+                  <i class="fa-solid fa-check"></i>
+                </div>
               </div>
             </a>
 
-            <a href="#" class="food_card">
+            <a href="#" class="menu_items">
               <div class="text_heart">
                 <div class="food_text">
                   <p class="police-roboto text-bold">Homard et espuma de potiron</p>
@@ -79,10 +91,13 @@
                 <div class="price police-roboto text-bold">
                   <p>20€</p>
                 </div>
+                <div class="menu_icone">
+                  <i class="fa-solid fa-check"></i>
+                </div>
               </div>
             </a>
 
-            <a href="#" class="food_card">
+            <a href="#" class="menu_items">
                 <div class="text_heart">
                   <div class="food_text">
                     <p class="police-roboto text-bold">Foie gras de canard cuit entier</p>
@@ -91,11 +106,15 @@
                   <div class="price police-roboto text-bold">
                     <p>35€</p>
                   </div>
+                  <div class="menu_icone">
+                    <i class="fa-solid fa-check"></i>
+                  </div>
                 </div>
             </a>
-
+            </div>
+            <div class="list">
             <p class="title_food_home police-roboto">PLATS</p>
-            <a href="#" class="food_card">
+            <a href="#" class="menu_items">
               <div class="text_heart">
                 <div class="food_text">
                   <p class="police-roboto text-bold">Noix de coquilles Saint-Jacques</p>
@@ -106,10 +125,13 @@
                 <div class="price police-roboto text-bold">
                   <p>40€</p>
                 </div>
+                <div class="menu_icone">
+                  <i class="fa-solid fa-check"></i>
+                </div>
               </div>
             </a>
 
-            <a href="#" class="food_card">
+            <a href="#" class="menu_items">
               <div class="text_heart">
                 <div class="food_text">
                   <p class="police-roboto text-bold">Langoustine poêlée</p>
@@ -118,10 +140,13 @@
                 <div class="price police-roboto text-bold">
                   <p>35€</p>
                 </div>
+                <div class="menu_icone">
+                  <i class="fa-solid fa-check"></i>
+                </div>
               </div>
             </a>
 
-            <a href="#" class="food_card">
+            <a href="#" class="menu_items">
               <div class="text_heart">
                 <div class="food_text">
                   <p class="police-roboto text-bold">
@@ -134,11 +159,15 @@
                 <div class="price police-roboto text-bold">
                   <p>44€</p>
                 </div>
+                <div class="menu_icone">
+                  <i class="fa-solid fa-check"></i>
+                </div>
               </div>
             </a>
-
+            </div>
+            <div class="list">
             <p class="title_food_home police-roboto">DESSERTS</p>
-            <a href="#" class="food_card">
+            <a href="#" class="menu_items">
               <div class="text_heart">
                 <div class="food_text">
                   <p class="police-roboto text-bold">
@@ -149,10 +178,13 @@
                 <div class="price police-roboto text-bold">
                   <p>18€</p>
                 </div>
+                <div class="menu_icone">
+                  <i class="fa-solid fa-check"></i>
+                </div>
               </div>
             </a>
 
-            <a href="#" class="food_card">
+            <a href="#" class="menu_items">
               <div class="text_heart">
                 <div class="food_text">
                   <p class="police-roboto text-bold">Baba au rhum revisité </p>
@@ -161,10 +193,13 @@
                 <div class="price police-roboto text-bold">
                   <p>22€</p>
                 </div>
+                <div class="menu_icone">
+                  <i class="fa-solid fa-check"></i>
+                </div>
               </div>
             </a>
 
-            <a href="#" class="food_card">
+            <a href="#" class="menu_items">
               <div class="text_heart">
                 <div class="food_text">
                   <p class="police-roboto text-bold">
@@ -175,8 +210,13 @@
                 <div class="price police-roboto text-bold">
                   <p>23€</p>
                 </div>
+                <div class="menu_icone">
+                  <i class="fa-solid fa-check"></i>
+                </div>
               </div>
             </a>
+            </div>
+            </div>
             <div class="check">
               <button class="explor_button police-roboto">Commander</button>
             </div>

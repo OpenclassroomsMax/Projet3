@@ -82,6 +82,11 @@
 
                     .food_text {
                         margin-left: 20px;
+                        .text-bold{
+                            @include Roboto;
+                            @include textebold;
+                            font-size: 20px;
+                        }
                     }
                 }
         

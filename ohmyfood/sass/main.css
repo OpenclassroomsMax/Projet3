@@ -1,11 +1,12 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&family=Roboto+Mono&family=Shrikhand&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto&family=Shrikhand&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto&family=Shrikhand&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto&family=Roboto+Mono&family=Shrikhand&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto&family=Roboto+Mono&family=Shrikhand&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto&family=Roboto+Mono&family=Shrikhand&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto&family=Roboto+Mono&family=Shrikhand&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto&family=Shrikhand&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Roboto&family=Shrikhand&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Roboto&family=Shrikhand&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Roboto&family=Shrikhand&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Roboto&family=Shrikhand&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Roboto&family=Shrikhand&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto&family=Roboto+Mono&family=Shrikhand&display=swap");
 body {
   margin: auto;
   font-family: "Roboto", sans-serif;
@@ -86,6 +87,8 @@ body {
   box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
   background: #f7f7f7;
   z-index: -1;
+  font-weight: bold;
+  font-family: "Roboto", sans-serif;
   /* margin-bottom: 30px; */
 }
 .all_fonction_button .index .fonction_button i {
@@ -126,20 +129,12 @@ body {
     align-items: center;
   }
 }
-.fonction_button:hover {
-  background-color: #ffdafc;
-}
-
-.icon__button--color {
-  color: gray;
-}
-
-.icon__button--color:hover {
-  color: #9356dc;
-}
-
 .section__background {
   background-color: #f7f7f7;
+}
+.section__background h1 {
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
 }
 .section__background .testimage {
   display: flex;
@@ -194,10 +189,13 @@ body {
 }
 .section__background .big_title {
   text-align: center;
+  font-family: "Roboto", sans-serif;
+  font-weight: bolder;
 }
 .section__background .sub_title {
   text-align: center;
   color: gray;
+  font-family: "Roboto", sans-serif;
 }
 
 @-webkit-keyframes spin {
@@ -215,6 +213,22 @@ body {
   }
   100% {
     transform: rotate(0deg);
+  }
+}
+@-webkit-keyframes decal {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}
+@keyframes decal {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(0%);
   }
 }
 @-webkit-keyframes appear {
@@ -324,6 +338,11 @@ body {
 .menu .plat .food_card .text_heart .food_text {
   margin-left: 20px;
 }
+.menu .plat .food_card .text_heart .food_text .text-bold {
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
+  font-size: 20px;
+}
 @media screen and (max-width: 768px) {
   .menu .plat .food_card {
     width: 100%;
@@ -393,6 +412,11 @@ footer i {
 .azer .parents .child2 .repas p {
   font-family: "Roboto", sans-serif;
 }
+.azer .parents .child2 .repas .list {
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+}
 .azer .parents .child2 .repas .menu_items {
   display: flex;
   flex-direction: column;
@@ -418,6 +442,10 @@ footer i {
 .azer .parents .child2 .repas .menu_items:nth-child(4) {
   -webkit-animation-delay: 2000ms;
           animation-delay: 2000ms;
+}
+.azer .parents .child2 .repas .menu_items:nth-child(5) {
+  -webkit-animation-delay: 2500ms;
+          animation-delay: 2500ms;
 }
 .azer .parents .child2 .repas .menu_items .text_heart {
   display: flex;
@@ -450,7 +478,8 @@ footer i {
   align-items: center;
   width: 15%;
   background-color: #99E2D0;
-  transition: all 1s;
+  -webkit-animation: decal 1s ease;
+          animation: decal 1s ease;
   color: transparent;
   justify-content: center;
 }
@@ -504,5 +533,8 @@ footer i {
 @media screen and (max-width: 768px) {
   .azer .parents .child2 .repas {
     flex-direction: column;
+  }
+  .azer .parents .child2 .repas .list {
+    width: 100%;
   }
 }/*# sourceMappingURL=main.css.map */

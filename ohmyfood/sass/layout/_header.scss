@@ -1,6 +1,12 @@
+@import"../utils/mixins";
 
 .section__background {
     background-color: #f7f7f7;
+    h1{
+      @include Roboto;
+      @include textebold; 
+    }
+    
 
   .testimage {
     display: flex;
@@ -52,10 +58,13 @@
   }
   .big_title {
     text-align: center;
+    @include Roboto;
+    font-weight: bolder;
   }
   .sub_title {
     text-align: center;
     color: gray;
+    @include Roboto;
   }
 
   

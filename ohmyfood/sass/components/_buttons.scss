@@ -90,6 +90,9 @@
             box-shadow: rgb(149 157 165 / 20%) 0px 8px 24px;
             background: #f7f7f7;
             z-index: -1;
+            @include textebold;
+            @include Roboto;
+            
             /* margin-bottom: 30px; */
             i {
                 margin-right: 10px;
@@ -141,15 +144,3 @@
   
 }
 
-
-
-
-.fonction_button:hover {
-    background-color: #ffdafc;
-  }
-  .icon__button--color {
-    color: gray;
-  }
-  .icon__button--color:hover {
-    color: #9356dc;
-  }

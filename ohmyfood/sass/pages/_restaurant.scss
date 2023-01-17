@@ -36,13 +36,19 @@
                 p{
                     @include Roboto;
                 }
+
+                .list {
+                    display: flex;
+                    flex-direction: column;
+                    width: 30%;
+                }
                 
                 
 
                 .menu_items
                 {
                     
-                    @for $i from 2 through 4{
+                    @for $i from 2 through 5{
                         &:nth-child(#{$i}){
                             animation-delay: 500ms * $i;
                         }
@@ -70,6 +76,7 @@
                             text-overflow: ellipsis;
                             padding-right: 20px;
                             @include textebold;
+                           
                         }
                         .food_text {
                             margin-left: 20px;
@@ -93,7 +100,8 @@
                             //margin-right: -100px;
                             width: 15%;
                             background-color: #99E2D0;
-                            transition: all 1s;
+                            //transition: all 1s ease;
+                            animation: decal 1s ease;
                             color: transparent;
                             justify-content: center;
                             i{
@@ -171,6 +179,10 @@
                 .repas
                 {
                     flex-direction: column ;
+                    .list {
+
+                        width: 100%;
+                    }
                 }
             }
 

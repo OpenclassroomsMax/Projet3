@@ -1,5 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto&family=Shrikhand&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Roboto&family=Roboto+Mono&family=Shrikhand&display=swap');
 @mixin base-shadow{
     box-shadow: rgb(50 50 93 / 25%) 0px 30px 60px -12px inset,
     rgb(0 0 0 / 30%) 0px 18px 36px -18px inset;
@@ -18,6 +17,9 @@
 
 @mixin Shrikhand{
   font-family: 'Shrikhand', cursive;
+}
+@mixin Robotomono{
+  font-family: 'Roboto Mono', monospace;
 }
 
 @mixin textebold{
